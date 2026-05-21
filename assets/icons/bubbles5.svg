@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="OBJECTS" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 154.24 103.2">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #c6e0ff;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M153.74,47.25c0,3.37-2.73,6.11-6.11,6.11s-6.11-2.73-6.11-6.11,2.73-6.11,6.11-6.11,6.11,2.73,6.11,6.11Z"/>
+  <path class="cls-1" d="M12.71,6.61c0,3.37-2.73,6.11-6.11,6.11S.5,9.98.5,6.61,3.23.5,6.61.5s6.11,2.73,6.11,6.11Z"/>
+  <circle class="cls-1" cx="61.07" cy="23.38" r="9.04"/>
+  <circle class="cls-1" cx="48.56" cy="98.84" r="3.86"/>
+</svg>

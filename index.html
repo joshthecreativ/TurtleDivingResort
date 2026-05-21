@@ -9,10 +9,10 @@
   <body>
     <header class="site-header">
       <a class="logo" href="#top" aria-label="Turtle Diving Resort Startseite">
-        <img src="https://www.figma.com/api/mcp/asset/3563a9e5-d287-4434-a63b-0335ba967a9f" alt="Turtle Diving Resort" />
+        <img src="assets/icons/Logo.svg" alt="Turtle Diving Resort" />
       </a>
       <nav class="main-nav" aria-label="Hauptnavigation">
-        <a href="#top">Startseite</a>
+        <a class="active" href="#top">Startseite</a>
         <a href="#spots">Tauchspots</a>
         <a href="#kurse">Kurse</a>
         <a href="#ueber-uns">Über uns</a>
@@ -22,9 +22,24 @@
 
     <main id="top">
       <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-overlay"></div>
+        <svg class="hero-back-wave" viewBox="0 0 1280 787" preserveAspectRatio="none" aria-hidden="true">
+          <path opacity="0.3" d="M498.269 742.278C347.285 724.5 95.8461 764.352 -8 786.5V-13.5H1287V728.278C929.5 829 687 764.5 498.269 742.278Z" fill="#00B4D8" />
+        </svg>
+        <svg class="hero-video-shape" viewBox="0 0 1280 767" preserveAspectRatio="none" aria-hidden="true">
+          <defs>
+            <clipPath id="heroVideoClip" clipPathUnits="userSpaceOnUse">
+              <path d="M631 742.5C398.6 784.5 108.167 750 -8 727.5V-7.5H1288.5V766.5C1249.5 751.5 1004.5 675 631 742.5Z" />
+            </clipPath>
+          </defs>
+          <foreignObject width="1280" height="767" clip-path="url(#heroVideoClip)">
+            <video class="hero-video" autoplay muted loop playsinline poster="assets/images/tauchspots-slider-01.jpg" xmlns="http://www.w3.org/1999/xhtml">
+              <source src="assets/videos/Hero_section_video.mp4" type="video/mp4" />
+            </video>
+            <div class="hero-video-overlay" xmlns="http://www.w3.org/1999/xhtml"></div>
+          </foreignObject>
+        </svg>
         <div class="container hero-content">
-          <h1 id="hero-title">Dein Tauchurlaub auf <strong>Gili Air</strong></h1>
+          <h1 id="hero-title">Dein Tauchurlaub<br />auf <strong>Gili Air</strong></h1>
           <p>
             Frühstück am Strand, Unterricht auf dem Boot, Tauchen an atemberaubenden Spots
             und Übernachten in verwunschenen Bungalows - buche jetzt deinen Tauchurlaub im

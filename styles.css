@@ -122,78 +122,105 @@ h3 {
 }
 
 .site-header {
-  position: sticky;
+  position: absolute;
   top: 0;
+  left: 0;
   z-index: 20;
   display: flex;
   width: 100%;
-  min-height: 87px;
-  align-items: center;
+  min-height: 124px;
+  align-items: flex-start;
   justify-content: space-between;
-  padding: 14px max(24px, calc((100vw - var(--max)) / 2));
-  background: #ffffff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 38px max(24px, calc((100vw - var(--max)) / 2)) 0;
+  background: transparent;
 }
 
 .logo img {
   width: 126px;
   height: auto;
+  filter: brightness(0) invert(1);
 }
 
 .main-nav {
   display: flex;
   align-items: center;
   gap: clamp(18px, 4vw, 50px);
-  color: var(--blue);
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1;
   white-space: nowrap;
+  padding-top: 26px;
 }
 
 .main-nav a {
   position: relative;
+  display: inline-flex;
+  justify-content: center;
+  padding-bottom: 20px;
 }
 
-.main-nav a:first-child::after {
+.main-nav a.active::after {
   content: "";
   position: absolute;
-  right: 0;
-  bottom: -13px;
-  left: 0;
-  height: 5px;
-  background: var(--blue);
+  bottom: 0;
+  left: 50%;
+  width: 90px;
+  height: 8px;
+  background: url("assets/icons/Startseite_menu_wave_long.svg") center / contain no-repeat;
+  transform: translateX(-50%);
 }
 
 .hero {
   position: relative;
-  min-height: 774px;
+  height: clamp(787px, 61.5vw, 980px);
   display: grid;
   align-items: center;
-  margin-top: -87px;
   overflow: hidden;
-  background:
-    linear-gradient(90deg, rgba(0, 45, 99, 0.92) 0%, rgba(0, 72, 145, 0.6) 44%, rgba(0, 72, 145, 0.08) 100%),
-    url("https://www.figma.com/api/mcp/asset/6e24bff8-a8a3-49df-ad2e-e8125b948908") center top / cover no-repeat;
+  background: #ffffff;
 }
 
-.hero::after {
-  content: "";
+.hero-back-wave,
+.hero-video-shape {
   position: absolute;
-  right: -4%;
-  bottom: -1px;
-  left: -4%;
-  height: 104px;
-  background: #ffffff;
-  clip-path: ellipse(63% 72% at 48% 100%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-back-wave {
+  z-index: 0;
+}
+
+.hero-video-shape {
+  z-index: 1;
+}
+
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.hero-video-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(0, 44, 96, 0.9) 0%, rgba(0, 82, 157, 0.56) 48%, rgba(0, 55, 104, 0.18) 100%),
+    linear-gradient(180deg, rgba(0, 25, 62, 0.26) 0%, rgba(0, 61, 128, 0.06) 38%, rgba(0, 56, 116, 0.78) 100%);
 }
 
 .hero-content {
   position: relative;
-  z-index: 1;
-  padding-top: 90px;
+  z-index: 2;
+  padding-top: 166px;
+  padding-bottom: 108px;
 }
 
 .hero-content p {
   max-width: 600px;
-  margin: 16px 0 32px;
+  margin: 30px 0 34px;
   color: #ffffff;
   font-size: 18px;
   line-height: 1.45;
@@ -562,7 +589,7 @@ textarea {
 
   .hero {
     margin-top: 0;
-    min-height: 670px;
+    height: 670px;
   }
 
   .nature-content,
