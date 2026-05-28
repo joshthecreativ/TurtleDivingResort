@@ -296,7 +296,7 @@ h3 {
 .feature-band {
   position: relative;
   width: 100vw;
-  height: 620px;
+  height: 550px;
   overflow: hidden;
 }
 
@@ -387,6 +387,50 @@ h3 {
 
 .feature-copy h2 span {
   font-weight: 600;
+}
+
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 4;
+
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.slider-arrow-left {
+  left: 300px;
+}
+
+.slider-arrow-right {
+  right: 300px;
+}
+.slider-arrow-right svg {
+  transform: rotate(180deg);
+}
+.slider-dots {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
+
+  display: flex;
+  gap: 10px;
+}
+
+.slider-dots span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+.slider-dots span.active {
+  background: #00C7FF;
 }
 
 .spots {
