@@ -321,6 +321,7 @@ h3 {
 
   width: 250px;
   height: auto;
+  z-index: 3;
 }
 
 .turtle-badge {
@@ -342,7 +343,7 @@ h3 {
   position: relative;
   width: 100vw;
   height: 550px;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .feature-band img {
@@ -688,7 +689,22 @@ h3 {
 }
 
 .booking {
+  position: relative;
+  overflow: visible;
   background-color: #ffffff;
+}
+
+.booking::after {
+  content: "";
+  position: absolute;
+  right: -180px;
+  top: 60px;
+  width: 580px;
+  height: 580px;
+  background: url("./assets/icons/Coral_buchen.svg") no-repeat center;
+  background-size: contain;
+  transform: rotate(-15deg);
+  pointer-events: none;
 }
 
 .form-grid,
@@ -788,12 +804,19 @@ textarea {
 .booking .button {
   min-height: 48px;
   padding: 12px 24px;
-  font-size: 16px;
+  font-size: 18px;
   width: fit-content;
 }
 
 .about {
-  background: linear-gradient(180deg, #ffffff 0%, #f5fdff 100%);
+  background: linear-gradient(
+    180deg,
+    #F8F8F8 0%,
+    #F8F8F8 35%,
+    #DFF4F8 60%,
+    #A9E5EF 85%,
+    #53CDE4 100%
+  );
 }
 
 .about-grid {
@@ -818,9 +841,47 @@ textarea {
   line-height: 1.45;
 }
 
-.about a {
+.about a:not(.button) {
   color: var(--blue);
   font-weight: 700;
+}
+
+.about article {
+  display: flex;
+  flex-direction: column;
+}
+
+.about article h3 {
+  min-height: 18px;
+}
+
+.learn-more,
+.learn-more:visited {
+  color: var(--blue) !important;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s ease;
+}
+
+.learn-more:hover,
+.learn-more:focus {
+  color: #111111 !important;
+}
+
+.learn-more::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: url("./assets/svg/arrow-right.svg")
+    center / contain no-repeat;
+  flex-shrink: 0;
+  transition: filter 0.3s ease;
+}
+
+.learn-more:hover::after {
+  filter: brightness(0);
 }
 
 .contact {
