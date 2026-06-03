@@ -408,7 +408,7 @@
 
       <section id="kontakt" class="contact section">
         <div class="container">
-          <h2>Kontakt</h2>
+          <h2><span class="keep-regular">Kontakt</span></h2>
           <p class="section-lead">
             Du möchtest bei uns deinen Tauchurlaub machen oder brauchst weitere
             Informationen? Dann schreib uns!
@@ -416,28 +416,46 @@
           <div class="contact-layout">
             <form class="contact-form">
               <label>
-                <span>Name</span>
-                <input type="text" autocomplete="name" />
+                <input type="text" placeholder="Name" autocomplete="name" />
               </label>
-              <label>
-                <span>Email</span>
-                <input type="email" autocomplete="email" />
-              </label>
-              <label class="full">
-                <span>Nachricht</span>
-                <textarea rows="6"></textarea>
-              </label>
+
+             <label>
+               <input type="email" placeholder="Email" autocomplete="email" />
+             </label>
+
+            <label class="full">
+              <textarea rows="6" placeholder="Nachricht"></textarea>
+            </label>
               <label class="checkbox full">
                 <input type="checkbox" />
-                <span>Ich habe die Datenschutzerklärung zur Kenntnis genommen.</span>
+                <span>Ich habe die Datenschutzerklärung zur Kenntnis genommen. 
+                  Ich stimme zu, dass meine Angaben und Daten elektronisch erhoben 
+                  und gespeichert werden. Die Einwilligung kann ich jederzeit 
+                  für die Zukunft widerrufen.</span>
               </label>
-              <button class="button" type="submit">Nachricht senden</button>
+              <div class="contact-submit">
+                  <button class="button" type="submit">Nachricht senden</button>
+               </div>
             </form>
             <address class="contact-data">
-              <p><strong>Turtle Diving Resort</strong><br />Gili Indah, Pemenang<br />Indonesien</p>
-              <p><strong>Telefon</strong><br />+62 812 362 7034</p>
-              <p><strong>E-Mail</strong><br />info@turtledivingresort.com</p>
-            </address>
+               <p><span><strong>Turtle Diving Resort</strong>
+                    Gili Indah, Pemenang<br/>
+                    Indonesien
+                 </span>
+              </p>
+
+               <p>
+                 <span>
+                    +62 812 362 7034
+                 </span>
+              </p>
+
+              <p>
+                <span>
+                   info@turtledivingresort.com
+                </span>
+              </p>
+           </address>
           </div>
         </div>
       </section>
