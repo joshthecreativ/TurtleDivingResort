@@ -891,6 +891,7 @@ textarea {
 
 .contact {
   padding-top: 60px;
+  padding-bottom: 140px;
   position: relative;
   overflow: visible;
   text-align: center;
@@ -1001,32 +1002,95 @@ textarea {
 
 .site-footer {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   background: var(--blue);
   color: #ffffff;
-  padding: 82px 0 52px;
+  padding: 82px 0 80px;
 }
 
+/* Front wave */
 .site-footer::before {
   content: "";
   position: absolute;
-  top: -64px;
-  right: -5%;
+  top: -120px;
+  left: -2%;
+  width: 104%;
+  height: 220px;
+
+  background-image: url("./assets/icons/wave-peudo-footer.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100% 100%;
+
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Back wave */
+.site-footer::after {
+  content: "";
+  position: absolute;
   left: -5%;
-  height: 128px;
-  background: #ffffff;
-  clip-path: ellipse(58% 63% at 50% 0%);
+  top: -150px;
+  width: 110%;
+  height: 240px;
+
+  background-image: url("./assets/icons/wave-peudo-footer-back.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100% 100%;
+
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Footer content above waves */
+.site-footer > * {
+  position: relative;
+  z-index: 2;
 }
 
 .footer-grid {
   display: grid;
   grid-template-columns: 1.2fr 1.2fr auto;
   gap: 48px;
+  align-items: start;
+}
+
+.footer-grid > div,
+.footer-grid nav {
+  align-self: start;
 }
 
 .footer-grid nav {
   display: flex;
   gap: 28px;
+  justify-self: end;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.footer-grid nav a + a {
+  position: relative;
+  padding-left: 28px;
+}
+
+.footer-grid nav a + a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 1px;
+  height: 18px;
+  background: #CEBE88;
+  transform: translateY(-50%);
+}
+
+.footer-owner {
+  display: inline-block;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #CEBE88;
 }
 
 .bubble-layer {
