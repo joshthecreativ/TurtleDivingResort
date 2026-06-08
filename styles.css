@@ -1612,3 +1612,68 @@ TEXT WEIGHT HELPERS
   background: #00B4D8;
   color: #ffffff;
 }
+
+/* ==========================================================================
+   KURSE
+   TAUCHKURSE & ANMELDUNG
+   ==========================================================================
+
+   Aufbau:
+
+   1. Subpage Hero
+   2. Tauchkurse
+   3. Kursübersicht
+   4. Kursanmeldung
+   5. Footer
+
+   ========================================================================== */
+
+.kurse-intro {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.kurse-intro h2 {
+  margin-bottom: 24px;
+}
+
+.kurse-intro p {
+  margin-bottom: 12px;
+}
+
+.course-card {
+  display: grid;
+  grid-template-columns: 220px 1fr 260px;
+  gap: 32px;
+
+  align-items: start;
+
+  margin-top: 0;
+  margin-bottom: 48px;
+}
+
+.course-image img {
+  width: 100%;
+  display: block;
+}
+
+.course-content h3 {
+  margin-bottom: 12px;
+}
+
+.course-content p {
+  margin: 0;
+}
+
+.course-meta {
+  border-left: 1px solid #d9d9d9;
+  padding-left: 32px;
+}
+
+.course-meta p {
+  margin-bottom: 18px;
+}
+
+.course-meta .button {
+  margin-top: 16px;
+}
