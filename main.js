@@ -124,6 +124,16 @@ function updateSpot(id) {
   document
     .querySelector(`.thumbnail-card[data-spot="${id}"]`)
     .classList.add("active");
+
+  pins.forEach(pin => {
+    const pinNumber = pin.dataset.spot;
+
+    if (pinNumber === id) {
+      pin.src = `assets/icons/pin-${pinNumber}.svg`;
+    } else {
+      pin.src = `assets/icons/pin-${pinNumber}-black.svg`;
+    }
+  });
 }
 
 pins.forEach(pin => {

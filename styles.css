@@ -1593,3 +1593,22 @@ TEXT WEIGHT HELPERS
 .centered {
   padding-bottom: 180px;
 }
+
+.thumbnail-card.active .thumb-number {
+  background: #00B4D8;
+  color: #ffffff;
+}
+
+.pin.active {
+  filter: none;
+}
+
+.thumb-number {
+  background: #000000;
+  color: #ffffff;
+}
+
+.thumbnail-card.active .thumb-number {
+  background: #00B4D8;
+  color: #ffffff;
+}
