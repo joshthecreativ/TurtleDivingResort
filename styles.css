@@ -27,6 +27,74 @@ body {
   background: #ffffff;
 }
 
+.sticky-header {
+  position: fixed;
+  top: -120px;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  z-index: 9999;
+  transition: top 0.4s ease;
+}
+
+.sticky-header.show {
+  top: 0;
+}
+
+.sticky-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.sticky-header .logo {
+  display: flex;
+  align-items: center;
+  width: 120px;
+  min-width: 120px;
+}
+
+.sticky-header .logo img {
+  display: block;
+  width: 120px;
+  height: auto;
+  filter: none;
+}
+
+.sticky-header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sticky-header nav a {
+  position: relative;
+  text-decoration: none;
+  color: #004b93;
+  font-size: 1.1rem;
+}
+
+.sticky-header nav a.active::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -18px;
+  width: 90px;
+  height: 8px;
+  transform: translateX(-50%);
+  background-image: url("assets/icons/wave_sticky_menu.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
 img {
   display: block;
   max-width: 100%;
@@ -898,6 +966,11 @@ textarea {
   background: #ffffff;
 }
 
+
+.contact .container {
+  position: relative;
+  z-index: 4;
+}
 .contact::before {
   content: "";
   position: absolute;
@@ -909,7 +982,7 @@ textarea {
   background: url("./assets/icons/wave-peudo-kontakt.svg")
     center bottom / 100% 100% no-repeat;
 
-  z-index: 10;
+  z-index: 1;
   pointer-events: none;
 }
 
@@ -999,6 +1072,7 @@ textarea {
   padding: 14px 32px;
   width: auto;
 }
+
 
 .site-footer {
   position: relative;

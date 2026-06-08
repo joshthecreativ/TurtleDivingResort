@@ -7,6 +7,23 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <header class="sticky-header">
+  <div class="container">
+    <a class="logo" href="index.html">
+      <img src="assets/icons/sticky-logo.svg" alt="Turtle Diving Resort">
+    </a>
+
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Startseite</a></li>
+        <li><a href="tauchsports.html">Tauchspots</a></li>
+        <li><a href="kurse.html">Kurse</a></li>
+        <li><a href="ueber-uns.html">Über uns</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
     <div class="bubble-layer">
      <img src="assets/svg/bubble-1.svg" class="bubble bubble-1" alt="">
      <img src="assets/svg/bubble-2.svg" class="bubble bubble-2" alt="">
@@ -405,60 +422,68 @@
 
   </div>
 </section>
-
       <section id="kontakt" class="contact section">
-        <div class="container">
-          <h2><span class="keep-regular">Kontakt</span></h2>
-          <p class="section-lead">
-            Du möchtest bei uns deinen Tauchurlaub machen oder brauchst weitere
-            Informationen? Dann schreib uns!
-          </p>
-          <div class="contact-layout">
-            <form class="contact-form">
-              <label>
-                <input type="text" placeholder="Name" autocomplete="name" />
-              </label>
+   
 
-             <label>
-               <input type="email" placeholder="Email" autocomplete="email" />
-             </label>
+  <div class="container">
+    <h2><span class="keep-regular">Kontakt</span></h2>
+    <p class="section-lead">
+      Du möchtest bei uns deinen Tauchurlaub machen oder brauchst weitere
+      Informationen? Dann schreib uns!
+    </p>
 
-            <label class="full">
-              <textarea rows="6" placeholder="Nachricht"></textarea>
-            </label>
-              <label class="checkbox full">
-                <input type="checkbox" />
-                <span>Ich habe die Datenschutzerklärung zur Kenntnis genommen. 
-                  Ich stimme zu, dass meine Angaben und Daten elektronisch erhoben 
-                  und gespeichert werden. Die Einwilligung kann ich jederzeit 
-                  für die Zukunft widerrufen.</span>
-              </label>
-              <div class="contact-submit">
-                  <button class="button" type="submit">Nachricht senden</button>
-               </div>
-            </form>
-            <address class="contact-data">
-               <p><span><strong>Turtle Diving Resort</strong>
-                    Gili Indah, Pemenang<br/>
-                    Indonesien
-                 </span>
-              </p>
+    <div class="contact-layout">
+      <form class="contact-form">
+        <label>
+          <input type="text" placeholder="Name" autocomplete="name" />
+        </label>
 
-               <p>
-                 <span>
-                    +62 812 362 7034
-                 </span>
-              </p>
+        <label>
+          <input type="email" placeholder="Email" autocomplete="email" />
+        </label>
 
-              <p>
-                <span>
-                   info@turtledivingresort.com
-                </span>
-              </p>
-           </address>
-          </div>
+        <label class="full">
+          <textarea rows="6" placeholder="Nachricht"></textarea>
+        </label>
+
+        <label class="checkbox full">
+          <input type="checkbox" />
+          <span>
+            Ich habe die Datenschutzerklärung zur Kenntnis genommen.
+            Ich stimme zu, dass meine Angaben und Daten elektronisch erhoben
+            und gespeichert werden. Die Einwilligung kann ich jederzeit
+            für die Zukunft widerrufen.
+          </span>
+        </label>
+
+        <div class="contact-submit">
+          <button class="button" type="submit">
+            Nachricht senden
+          </button>
         </div>
-      </section>
+      </form>
+
+      <address class="contact-data">
+        <p>
+          <span>
+            <strong>Turtle Diving Resort</strong>
+            Gili Indah, Pemenang<br />
+            Indonesien
+          </span>
+        </p>
+
+        <p>
+          <span>+62 812 362 7034</span>
+        </p>
+
+        <p>
+          <span>info@turtledivingresort.com</span>
+        </p>
+      </address>
+    </div>
+  </div>
+
+</section>
     </main>
 
     <footer class="site-footer">

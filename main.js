@@ -44,3 +44,15 @@ nextBtn.addEventListener("click", nextSlide);
 prevBtn.addEventListener("click", prevSlide);
 
 setInterval(nextSlide, 5000);
+
+const stickyHeader = document.querySelector('.sticky-header');
+
+if (stickyHeader) {
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      stickyHeader.classList.add('show');
+    } else {
+      stickyHeader.classList.remove('show');
+    }
+  });
+}
