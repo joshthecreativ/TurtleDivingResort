@@ -1079,7 +1079,7 @@ textarea {
   overflow: visible;
   background: var(--blue);
   color: #ffffff;
-  padding: 82px 0 80px;
+  padding: 82px 0 60px;
 }
 
 /* Front wave */
@@ -1352,4 +1352,63 @@ textarea {
   .course-row dl div {
     grid-template-columns: 74px 1fr;
   }
+}
+
+
+/* ==========================================================================
+
+TAUCHSPOTS PAGE
+   ---------------------------------------------------------
+   Hero
+   Intro
+   Interactive Map
+   CTA
+   Footer
+========================================================================== */
+
+.subpage-hero {
+  position: relative;
+  height: 480px;
+  overflow: hidden;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(0, 66, 130, 0.85) 0%,
+      rgba(0, 66, 130, 0.55) 40%,
+      rgba(0, 66, 130, 0.15) 100%
+    ),
+    url("assets/images/tauchspots-hero.jpg");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.subpage-hero-content {
+  position: relative;
+  z-index: 2;
+  padding-top: 220px;
+}
+
+.subpage-hero-content h1 {
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.subpage-hero-content p {
+  color: #fff;
+  max-width: 600px;
+}
+
+.tauchspots-intro {
+  position: relative;
+  background: #ffffff;;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.tauchspots-intro p {
+  max-width: 820px;
+  font-size: 18px;
+  line-height: 1.5;
 }
