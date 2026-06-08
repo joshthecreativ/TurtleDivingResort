@@ -1476,13 +1476,27 @@ TEXT WEIGHT HELPERS
   padding: 24px;
 }
 
+.spot-info-image {
+  width: 90px;
+  height: 90px;
+
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+
+  margin-top: 0;
+  margin-left: 18px;
+  margin-bottom: 24px;
+}
+
 .spot-number {
   position: absolute;
-  top: 42px;
-  left: 22px;
 
-  width: 34px;
-  height: 34px;
+  top: 16px;
+  left: 16px;
+
+  width: 40px;
+  height: 40px;
 
   border-radius: 50%;
 
@@ -1493,23 +1507,10 @@ TEXT WEIGHT HELPERS
   align-items: center;
   justify-content: center;
 
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
 
-  z-index: 20;
-}
-
-.spot-info-image {
-  width: 90px;
-  height: 90px;
-
-  border-radius: 50%;
-  object-fit: cover;
-  display: block;
-
-  margin-top: 28px;
-  margin-left: 34px;
-  margin-bottom: 24px;
+  z-index: 100;
 }
 
 .spot-info-card h3 {
@@ -1559,33 +1560,34 @@ TEXT WEIGHT HELPERS
 
 .pin {
   position: absolute;
-  width: 42px;
+  width: 32px;
+  height: auto;
   z-index: 20;
 }
 
 .pin-1 {
-  top: 8%;
-  left: 31%;
+  top: 10%;
+  left: 35%;
 }
 
 .pin-2 {
-  top: 18%;
-  left: 27%;
+  top: 20%;
+  left: 31%;
 }
 
 .pin-3 {
-  top: 42%;
-  left: 6%;
+  top: 40%;
+  left: 7%;
 }
 
 .pin-4 {
-  top: 78%;
-  left: 15%;
+  top: 75%;
+  left: 21%;
 }
 
 .pin-5 {
-  top: 24%;
-  left: 56%;
+  top: 30%;
+  left: 55%;
 }
 
 .centered {

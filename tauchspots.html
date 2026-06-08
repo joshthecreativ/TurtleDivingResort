@@ -84,33 +84,34 @@
 
       <div class="map-area">
 
-        <img
-          src="assets/images/Tauchspots-Map.svg"
-          alt="Tauchspots Karte"
-          class="tauchspots-map-svg"
-        >
+  <img
+    src="assets/images/Tauchspots-Map.svg"
+    alt="Tauchspots Karte"
+    class="tauchspots-map-svg"
+  >
 
-        <img src="assets/icons/pin-1.svg" class="pin pin-1" alt="">
-        <img src="assets/icons/pin-2.svg" class="pin pin-2" alt="">
-        <img src="assets/icons/pin-3.svg" class="pin pin-3" alt="">
-        <img src="assets/icons/pin-4.svg" class="pin pin-4" alt="">
-        <img src="assets/icons/pin-5.svg" class="pin pin-5" alt="">
+  <img src="assets/icons/pin-1.svg" class="pin pin-1" data-spot="1" alt="">
+  <img src="assets/icons/pin-2.svg" class="pin pin-2" data-spot="2" alt="">
+  <img src="assets/icons/pin-3.svg" class="pin pin-3" data-spot="3" alt="">
+  <img src="assets/icons/pin-4.svg" class="pin pin-4" data-spot="4" alt="">
+  <img src="assets/icons/pin-5.svg" class="pin pin-5" data-spot="5" alt="">
 
-      </div>
+</div>
 
       <article class="spot-info-card">
 
-        <div class="spot-number">1</div>
+        <div class="spot-number" id="active-number">1</div>
 
         <img
+          id="active-image"
           src="assets/images/deep_turbo_tauchspots.jpg"
           alt="Deep Turbo"
           class="spot-info-image"
         >
 
-        <h3>DEEP TURBO</h3>
+        <h3 id="active-title">DEEP TURBO</h3>
 
-        <p>
+        <p id="active-description">
           Wer schon viel Erfahrung hat, wird diesen 
           Tauchplatz auf 23 Metern Tiefe lieben. 
           Hier trefft ihr Große Zackenbarsche, Muränen 
@@ -125,37 +126,37 @@
 
     <div class="spot-thumbnails">
 
-      <article class="thumbnail-card active">
-        <img src="assets/images/deep_turbo_inactive.jpg" alt="Deep Turbo">
-        <span class="thumb-number">1</span>
-        <h3>DEEP TURBO</h3>
-      </article>
+  <article class="thumbnail-card active" data-spot="1">
+    <img src="assets/images/deep_turbo_inactive.jpg" alt="Deep Turbo">
+    <span class="thumb-number">1</span>
+    <h3>DEEP TURBO</h3>
+  </article>
 
-      <article class="thumbnail-card">
-        <img src="assets/images/coral-garden-inactive.jpg" alt="Coral Fan Garden">
-        <span class="thumb-number">2</span>
-        <h3>CORAL FAN GARDEN</h3>
-      </article>
+  <article class="thumbnail-card" data-spot="2">
+    <img src="assets/images/coral-garden-inactive.jpg" alt="Coral Fan Garden">
+    <span class="thumb-number">2</span>
+    <h3>CORAL FAN GARDEN</h3>
+  </article>
 
-      <article class="thumbnail-card">
-        <img src="assets/images/sharkpoint-inactive.jpg" alt="Shark Point">
-        <span class="thumb-number">3</span>
-        <h3>SHARK POINT</h3>
-      </article>
+  <article class="thumbnail-card" data-spot="3">
+    <img src="assets/images/sharkpoint-inactive.jpg" alt="Shark Point">
+    <span class="thumb-number">3</span>
+    <h3>SHARK POINT</h3>
+  </article>
 
-      <article class="thumbnail-card">
-        <img src="assets/images/mantapoint_inactive.jpg" alt="Manta Point">
-        <span class="thumb-number">4</span>
-        <h3>MANTA POINT</h3>
-      </article>
+  <article class="thumbnail-card" data-spot="4">
+    <img src="assets/images/mantapoint_inactive.jpg" alt="Manta Point">
+    <span class="thumb-number">4</span>
+    <h3>MANTA POINT</h3>
+  </article>
 
-      <article class="thumbnail-card">
-        <img src="assets/images/turtle-heaven-inacctive.jpg" alt="Turtle Heaven">
-        <span class="thumb-number">5</span>
-        <h3>TURTLE HEAVEN</h3>
-      </article>
+  <article class="thumbnail-card" data-spot="5">
+    <img src="assets/images/turtle-heaven-inacctive.jpg" alt="Turtle Heaven">
+    <span class="thumb-number">5</span>
+    <h3>TURTLE HEAVEN</h3>
+  </article>
 
-    </div>
+</div>
 
   </div>
 
